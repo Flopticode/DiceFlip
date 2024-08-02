@@ -2,7 +2,6 @@
 #include <vector>
 #include "types.h"
 #include <string>
-#include <Windows.h>
 #include <fstream>
 
 #define AUTOINPUT
