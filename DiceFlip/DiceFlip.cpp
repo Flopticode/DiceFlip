@@ -330,8 +330,8 @@ int main()
 	transpositionTable = reinterpret_cast<uint16*>(calloc(sizeof(uint16), NUM_GAME_STATES));
 
 	// 
-	// Game Initialization
-	//
+	// Looping over every game possible
+	// 
 
 	for (int8 startTotal = 66; startTotal >= 11; startTotal--)
 	{
@@ -339,6 +339,10 @@ int main()
 		{
 			for (Player startPlayer = -1; startPlayer <= -1; startPlayer += 2)
 			{
+				// 
+				// Game Initialization
+				//
+
 				std::cout << "Starting total: " << std::to_string(startTotal) << std::endl;
 				std::cout << "Dice shows: " << std::to_string(startMove) << std::endl;
 
